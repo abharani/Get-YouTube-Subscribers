@@ -2,7 +2,11 @@
 const swaggerJsDoc = require('swagger-jsdoc');
 
 // Getting the port from the environment variable or using a default value
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
+
+const baseUrl = process.env.NODE_ENV === 'production'
+    ? 'https://get-youtube-subscribers-o1sr.onrender.com/'
+    : `http://localhost:${port}`;
 
 // Configuring options for Swagger documentation
 const options = {
@@ -15,7 +19,7 @@ const options = {
         },
         servers: [
             {
-                url: `http://localhost:${port}`, // Use the dynamic port
+                url: baseUrl, // Use the dynamic port
             },
         ],
     },

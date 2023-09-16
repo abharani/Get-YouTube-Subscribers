@@ -4,7 +4,10 @@ require('dotenv').config();
 const express = require('express');
 const app = require('./app.js');
 const mongoose = require('mongoose');
-const port = process.env.PORT || 3000;
+const cors = require('cors');
+const port = process.env.PORT || 4000;
+
+app.use(cors());
 
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
