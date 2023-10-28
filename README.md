@@ -67,6 +67,4 @@ dotenv
 https://get-youtube-subscribers-0uq0.onrender.com
 ## Screenshots
 
-![Get Youtube Subscribers](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 https://drive.google.com/file/d/15hskY0omjM9zv3XdJGK4dshm5M9vSpr9/view?usp=sharing
